@@ -1,0 +1,129 @@
+.catalog {
+  background: black;
+  color: white;
+  width: 40%;
+  margin: 0 auto;
+}
+
+.catalog h1.header {
+  margin: 0;
+  background: #222;
+  padding-bottom: 10px;
+}
+
+.catalog .footer {
+  clear: both;
+  background: #222;
+  text-align: right;
+  font-size: 12px;
+  color: #444;
+  padding: 10px 0;
+}
+
+.catalog .products.animation-products-fade-out {
+  animation: fadeOut 0.3s;
+}
+
+.catalog .products.animation-products-fade-in {
+  animation: fadeIn 0.3s;
+}
+
+@keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.catalog .categories {
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  width: 100%;
+  background: #111;
+  list-style: none;
+}
+
+.catalog .categories .category {
+  padding: 10px;
+}
+
+.catalog .categories .category.active {
+  pointer-events: none;
+  background: #53A8C2;
+  font-weight: bold;
+}
+
+.catalog .categories .category:hover {
+  background: #222;
+  cursor: pointer;
+}
+
+.catalog .products {
+  text-align: left;
+  padding: 10px;
+  cursor: default;
+  overflow: hidden;
+  min-height: 210px;
+}
+
+.catalog .products > div {
+  display: flex;
+  flex-direction: row;
+  line-height: 26px;
+}
+
+.catalog .products > div.header {
+  color: #999;
+}
+
+.catalog .products > div > div {
+  width: 33%;
+}
+
+.catalog .products > div > div + div {
+  text-align: center;
+}
+
+.catalog .products > div > div:last-child {
+  text-align: right;
+}
+
+.catalog .products .item input {
+  background: #222;
+  border: 0;
+  padding: 2px 0;
+  text-align: center;
+  width: 35%;
+  color: #53A8C2;
+  outline: none;
+  font-weight: bold;
+}
+
+.catalog .products .item button {
+  background: #222;
+  cursor: pointer;
+  border: 0;
+  color: white;
+  border-radius: 4px;
+  outline: none;
+}
+
+.catalog .products .item button:hover {
+  background: #53A8C2;
+}
+
+.catalog .products .item button.disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.loading {
+  font-size: 30px;
+  height: 500px;
+  line-height: 500px;
+}
+
